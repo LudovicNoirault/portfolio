@@ -1,0 +1,20 @@
+{
+  "name": "portfoliofin2018",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/LudovicNoirault/portfolio.git"
+  },
+  "author": "Ludovic Noirault",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LudovicNoirault/portfolio/issues"
+  },
+  "homepage": "https://github.com/LudovicNoirault/portfolio#readme"
+}
