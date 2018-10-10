@@ -1,0 +1,191 @@
+/* ----------------------------------------------------
+                        Sommaire
+ ---------------------------------------------------- */
+/*
+
+variables
+
+body
+side
+    title
+    menu
+        items*4
+main
+    presentation
+    main-title
+    main-content
+    d-arrow
+    u-arrow
+
+media queries
+    1200
+    900
+    600
+
+*/
+/* ----------------------------------------------------
+                        Variables 
+ ---------------------------------------------------- */
+/* ----------------------------------------------------
+                        Reset 
+ ---------------------------------------------------- */
+body {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-size: 1.7rem; }
+
+h2 {
+  font-size: 1.5rem; }
+
+a {
+  text-decoration: none; }
+
+h1,
+h2,
+h3,
+p {
+  margin: 0; }
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+section {
+  width: 100%;
+  min-height: 100vh; }
+
+/* ----------------------------------------------------
+                        Side 
+ ---------------------------------------------------- */
+body {
+  overflow-x: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  scroll-behavior: smooth; }
+
+/* ----------------------------------------------------
+                        Side 
+ ---------------------------------------------------- */
+#side {
+  background: #444;
+  width: 20rem; }
+
+#side-fixed {
+  position: sticky;
+  width: 20rem;
+  top: 0; }
+
+.side-title {
+  background: #444;
+  color: white;
+  padding: 2rem; }
+
+.side-menu {
+  background: #444;
+  color: white;
+  padding-left: 3rem;
+  padding-top: 3rem; }
+
+#side-menu-ul {
+  display: flex;
+  flex-direction: column; }
+
+.side-item {
+  display: flex; }
+
+.side-item a {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  color: grey;
+  transition: 0.3s; }
+
+.side-item a:hover {
+  color: white;
+  text-shadow: 0 0 0.3rem #fff;
+  transition: 0.3s;
+  transform: scale(1.1); }
+
+/* ----------------------------------------------------
+                        Main
+ ---------------------------------------------------- */
+#main {
+  min-height: 100vh;
+  background: #009999; }
+
+section {
+  position: relative; }
+
+section:nth-child(odd) {
+  background-color: whitesmoke; }
+
+.main-card {
+  padding: 2rem;
+  background-color: whitesmoke;
+  box-shadow: 0 0.4rem 0.8rem -0.6rem black;
+  position: relative; }
+
+.card-text {
+  margin: 1rem;
+  padding: 1rem; }
+
+.card-link {
+  margin: 1rem;
+  padding: 1rem;
+  color: white;
+  background-color: #444;
+  box-shadow: 0 0.2rem 0.5rem -0.2rem white;
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+
+.d-arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  font-size: 2rem;
+  color: black; }
+
+.u-arrow {
+  position: absolute;
+  left: 50%;
+  top: 1rem;
+  font-size: 2rem;
+  color: black; }
+
+.main-title {
+  padding: 2rem; }
+
+.main-title:not(:first-child) {
+  padding-top: 4rem; }
+
+.main-content {
+  padding: 2rem; }
+
+#to-the-top {
+  display: flex;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #444;
+  font-size: 1.5rem;
+  padding: 0.3rem;
+  border-radius: 0 0.5rem 0 0.5rem;
+  transition: 0.3s;
+  box-shadow: 0 0.2rem 0.5rem -0.2rem black;
+  color: white; }
+
+#to-the-top:hover {
+  transform: scale(1.4);
+  transition: 0.3s;
+  box-shadow: 0 0.4rem 0.8rem -0.6rem black; }
+
+#to-the-top p:first-child {
+  margin-right: -0.5rem; }
+
+/* ----------------------------------------------------
+                        Main
+ ---------------------------------------------------- */
