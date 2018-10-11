@@ -1,22 +1,23 @@
+var clicked = false;
+
 function openSide() {
+
     var burgerElem = document.getElementById("burger");
     var sideElem = document.getElementById("side");
-    var sideFixedElem = document.getElementById("side-fixed");
+    var sideMain = document.getElementById("main");
 
-    console.log("click motherfucker !")
+    console.log("click dammit !")
 
-    if (burgerElem.style.left === "1rem") {
+    if (clicked === true) {
+        sideElem.style.left = "0";
+        sideMain.style.width = "62vw"
         burgerElem.style.left = "17.5rem";
-        sideElem.style.width = "20rem";
-        sideFixedElem.style.width = "20rem";
-        sideFixedElem.style.opacity = "1"
-        console.log("IF click motherfucker !")
+        clicked = false;
     } else {
-        burgerElem.style.left = "1rem";
+        sideElem.style.left = "-17rem";
+        sideMain.style.width = "95vw";
+        burgerElem.style.left = "0.5rem";
         burgerElem.style.opacity = "1";
-        sideElem.style.width = "4rem";
-        sideFixedElem.style.width = "-20rem";
-        sideFixedElem.style.opacity = "0"
-        console.log("ELSE click motherfucker !")
+        clicked = true;
     }
 };

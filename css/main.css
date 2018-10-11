@@ -59,21 +59,26 @@ section {
   min-height: 100vh; }
 
 /* ----------------------------------------------------
-                        Side 
+                        Body 
  ---------------------------------------------------- */
 body {
   overflow-x: hidden;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  position: relative; }
 
 /* ----------------------------------------------------
                         Side 
  ---------------------------------------------------- */
 #side {
+  position: fixed;
   background: #444;
+  top: 0;
+  left: 0;
   width: 20rem;
-  transition: 0.3s; }
+  transition: 0.3s;
+  min-height: 100vh; }
 
 #burger {
   visibility: hidden;
@@ -129,11 +134,15 @@ body {
                         Main
  ---------------------------------------------------- */
 #main {
-  min-height: 100vh;
-  background: #009999; }
+  position: absolute;
+  max-width: calc(100vw - 20rem);
+  right: 0;
+  background: #009999;
+  overflow-y: scroll; }
 
 section {
-  position: relative; }
+  position: relative;
+  min-height: 100vh; }
 
 section:nth-child(odd) {
   background-color: whitesmoke; }
@@ -164,11 +173,11 @@ section:nth-child(odd) {
 
 .down {
   bottom: 1rem;
-  box-shadow: 0 0.8rem 0.6rem -0.6rem black; }
+  text-shadow: 0 0.8rem 0.6rem -0.6rem black; }
 
 .up {
   top: 1rem;
-  box-shadow: 0 -0.8rem 0.6rem -0.6rem black; }
+  text-shadow: 0 -0.8rem 0.6rem -0.6rem black; }
 
 /* ----------------------------------------------------
                         presentation
@@ -199,6 +208,12 @@ section:nth-child(odd) {
 /* ----------------------------------------------------
                         cv
  ---------------------------------------------------- */
+#cv-download-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 25vh; }
+
 /* ----------------------------------------------------
                         contact
  ---------------------------------------------------- */
@@ -267,9 +282,11 @@ section:nth-child(odd) {
  ---------------------------------------------------- */
 @media screen and (max-width: 1000px) {
   #side {
-    width: 4rem;
+    left: -17rem;
     transition: 0.3s; }
   #burger {
-    left: 1rem;
+    left: 0.5rem;
     visibility: visible;
-    opacity: 1; } }
+    opacity: 1; }
+  #main {
+    max-width: calc(100vw - 4rem); } }
