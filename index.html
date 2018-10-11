@@ -7,33 +7,36 @@
     <title>Ludovic Noirault - Développeur Informatique</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <script src="main.js"></script>
+
 </head>
 
 <body>
     <div id="side">
-        <div id="side-fixed">
-            <header class="side-title">
-                <h1>Ludovic Noirault</h1>
-                <h2>Développeur Informatique</h2>
-            </header>
-            <nav class="side-menu">
-                <ul id="side-menu-ul">
-                    <li class="side-item">
-                        <a href="#presentation">Présentation</a>
-                    </li>
-                    <li class="side-item">
-                        <a href="#projets">Projets</a>
-                    </li>
-                    <li class="side-item">
-                        <a href="#cv">CV</a>
-                    </li>
-                    <li class="side-item">
-                        <a href="#contacts">Contacts</a>
-                    </li>
-                </ul>
-            </nav>
+        <div id="burger" onclick="openSide()">
+            <div class="line"> </div>
+            <div class="line"> </div>
+            <div class="line"> </div>
         </div>
+        <header class="side-title">
+            <h1>Ludovic Noirault</h1>
+            <h2>Développeur Informatique</h2>
+        </header>
+        <nav class="side-menu">
+            <ul id="side-menu-ul">
+                <li class="side-item">
+                    <a href="#presentation">Présentation</a>
+                </li>
+                <li class="side-item">
+                    <a href="#projets">Projets</a>
+                </li>
+                <li class="side-item">
+                    <a href="#cv">CV</a>
+                </li>
+                <li class="side-item">
+                    <a href="#contacts">Contacts</a>
+                </li>
+            </ul>
+        </nav>
     </div>
 
     <div id="main">
@@ -63,11 +66,11 @@
             </div>
 
 
-            <a class="d-arrow" href="#projets">&#8642;</a>
+            <a class="down arrow" href="#projets">&#8642;</a>
 
         </section>
         <section id="projets">
-            <a class="u-arrow" href="#presentation">&#8639;</a>
+            <a class="up arrow" href="#presentation">&#8639;</a>
 
             <div class="main-content">
                 <h2 class="main-title">
@@ -100,34 +103,36 @@
                 </div>
             </div>
 
-            <a class="d-arrow" href="#cv">&#8642;</a>
+            <a class="down arrow" href="#cv">&#8642;</a>
 
         </section>
         <section id="cv">
 
-            <a class="u-arrow" href="#projets">&#8639;</a>
-
-            <h2 class="main-title">
-                CV
-            </h2>
+            <a class="up arrow" href="#projets">&#8639;</a>
 
             <div class="main-content">
-                <p>
-                    Intéréssés par mon profil ? N'hésitez pas télécharger mon CV pour une présentation complète de mes
-                    compétences ainsi que de nombreuses méthodes pour me contacter.
-                </p>
+                <h2 class="main-title">
+                    CV
+                </h2>
+                <div class="main-card">
+                    <p>
+                        Intéréssés par mon profil ? N'hésitez pas télécharger mon CV pour une présentation complète de
+                        mes compétences ainsi que de nombreuses méthodes pour me contacter.
+                    </p>
 
-                <a href="files/ludovic_noirault-cv_10_18.pdf" download> <button id="download"> Télécharger
-                    </button></a>
-
+                    <a href="
+                    files/ludovic_noirault-cv_10_18.pdf" download> <button id="download">
+                            Télécharger
+                        </button></a>
+                </div>
             </div>
 
-            <a class="d-arrow" href="#contact">&#8642;</a>
+            <a class="down arrow" href="#contact">&#8642;</a>
 
         </section>
         <section id="contact">
 
-            <a class="u-arrow" href="#cv">&#8639;</a>
+            <a class="up arrow" href="#cv">&#8639;</a>
 
             <h2 class="main-title">
                 Contact
@@ -148,17 +153,18 @@
                         ludovic (dot) noirault@imie.fr
                     </p>
                 </div>
-                <div class="contact-type">
-                    <a class="contact-link" href="https://twitter.com/ludovicnoirault">
-                        <img class="contact-img" src="files/twitter_PNG1.png" alt="logo-twitter">
-                    </a>
-                    <p class="contact-text">@ludovicnoirault </p>
-                </div>
+
                 <div class="contact-type">
                     <a class="contact-link" href="https://www.linkedin.com/in/l-noirault/">
                         <img class="contact-img" src="files/linkedin.png" alt="logo-linkedin">
                     </a>
                     <p class="contact-text"> @l-noirault</p>
+                </div>
+                <div class="contact-type">
+                    <a class="contact-link" href="https://twitter.com/ludovicnoirault">
+                        <img class="contact-img" src="files/twitter_PNG1.png" alt="logo-twitter">
+                    </a>
+                    <p class="contact-text">@ludovicnoirault </p>
                 </div>
             </div>
         </section>
@@ -167,7 +173,7 @@
         <p>&#8639;</p>
         <p>&#8638;</p>
     </a>
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
