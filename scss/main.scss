@@ -73,13 +73,14 @@ section {
 }
 
 /* ----------------------------------------------------
-                        Side 
+                        Body 
  ---------------------------------------------------- */
 body {
     overflow-x: hidden;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     scroll-behavior: smooth;
+    position: relative
 }
 
 /* ----------------------------------------------------
@@ -87,17 +88,13 @@ body {
  ---------------------------------------------------- */
 
 #side {
+    position: fixed;
     background: $primcolor;
+    top: 0;
+    left: 0;
     width: 20rem;
     transition: 0.3s;
-}
-
-#side-fixed {
-    position: sticky;
-    width: 20rem;
-    top: 3rem;
-    opacity: 1;
-    transition: 0.3s;
+    min-height: 100vh;
 }
 
 #burger {
@@ -165,12 +162,16 @@ body {
  ---------------------------------------------------- */
 
 #main {
-    min-height: 100vh;
+    position: absolute;
+    max-width: calc(100vw - 20rem);
+    right: 0;
     background: $secondcolor;
+    overflow-y: scroll;
 }
 
 section {
     position: relative;
+    min-height: 100vh;
 }
 
 section:nth-child(odd) {
@@ -209,12 +210,12 @@ section:nth-child(odd) {
 
 .down {
     bottom: 1rem;
-    box-shadow: 0 0.8rem 0.6rem -0.6rem black;
+    text-shadow: 0 0.8rem 0.6rem -0.6rem black;
 }
 
 .up {
     top: 1rem;
-    box-shadow: 0 -0.8rem 0.6rem -0.6rem black;
+    text-shadow: 0 -0.8rem 0.6rem -0.6rem black;
 }
 
 /* ----------------------------------------------------
@@ -264,7 +265,12 @@ section:nth-child(odd) {
                         cv
  ---------------------------------------------------- */
 
-#cv {}
+#cv-download-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 25vh;
+}
 
 /* ----------------------------------------------------
                         contact
@@ -336,12 +342,10 @@ section:nth-child(odd) {
     box-shadow: 0 0.4rem 0.8rem -0.6rem black;
 }
 
-
 #to-the-top p:first-child {
     margin-right: -0.5rem;
 
 }
-
 
 /* ----------------------------------------------------
                         Media queries
@@ -349,22 +353,17 @@ section:nth-child(odd) {
 
 @media screen and (max-width:1000px) {
     #side {
-        width: 4rem;
+        left: -17rem;
         transition: 0.3s;
     }
 
-    #side-fixed {
-        left: -20rem;
-        opacity: 0;
-    }
-
     #burger {
-        left: 1rem;
+        left: 0.5rem;
         visibility: visible;
         opacity: 1;
     }
 
-    #main {}
-
-
+    #main {
+        max-width: calc(100vw - 4rem);
+    }
 }
