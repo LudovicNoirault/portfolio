@@ -179,16 +179,14 @@ section:nth-child(odd) {
 }
 
 .main-title {
-    padding: 2rem;
+    padding: 4rem 0 2rem 2rem;
 }
 
 .main-title:not(:first-child) {
     padding-top: 4rem;
 }
 
-.main-content {
-    padding: 2rem;
-}
+
 
 /* ----------------------------------------------------
                         arrows
@@ -196,10 +194,10 @@ section:nth-child(odd) {
 
 .arrow {
     position: absolute;
-    left: 50%;
     font-size: 2rem;
     color: #333;
     font-weight: bold;
+    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -209,39 +207,80 @@ section:nth-child(odd) {
 }
 
 .down {
+    left: 50%;
     bottom: 1rem;
     text-shadow: 0 0.8rem 0.6rem -0.6rem black;
 }
 
 .up {
+    left: 50%;
     top: 1rem;
     text-shadow: 0 -0.8rem 0.6rem -0.6rem black;
+}
+
+.left {
+    visibility: hidden;
+    font-size: 3rem;
+    left: 2rem;
+    top: 50%;
+}
+
+.right {
+    visibility: visible;
+    font-size: 3rem;
+    right: 2rem;
+    top: 50%;
 }
 
 /* ----------------------------------------------------
                         presentation
  ---------------------------------------------------- */
 
-#presentation {}
+#sec-presentation {}
 
 /* ----------------------------------------------------
                         projets
  ---------------------------------------------------- */
 
-#projets {}
+#sec-projects {}
+
+#projects {
+    position: relative;
+    overflow-x: hidden;
+    margin: auto auto auto auto;
+    height: calc(100vh - 15rem);
+    width: calc(100vw - 30rem);
+}
+
+.single-project {
+    position: absolute;
+    padding: 2rem;
+    background-color: whitesmoke;
+    box-shadow: 0 0.4rem 0.8rem -0.6rem black;
+    width: calc(100% - 4rem);
+    height: calc(100% - 4rem);
+}
+
+#card1 {
+    left: 0;
+}
+
+#card2 {
+    left: 100vw
+}
+
+#card3 {
+    left: 200vw;
+}
 
 .main-card {
     padding: 2rem;
     background-color: whitesmoke;
     box-shadow: 0 0.4rem 0.8rem -0.6rem black;
     position: relative;
+    margin: 2rem;
+
 }
-
-#card1 {}
-
-#card2 {}
-
-#card3 {}
 
 .card-title {}
 
@@ -265,6 +304,8 @@ section:nth-child(odd) {
                         cv
  ---------------------------------------------------- */
 
+#sec-cv {}
+
 #cv-download-image {
     display: block;
     margin-left: auto;
@@ -275,11 +316,11 @@ section:nth-child(odd) {
 /* ----------------------------------------------------
                         contact
  ---------------------------------------------------- */
+#sec-contact {}
 
 #contact-card {
     display: flex;
     flex-wrap: wrap;
-    margin: 2rem;
 }
 
 .contact-type {
