@@ -137,8 +137,7 @@ body {
   position: absolute;
   max-width: calc(100vw - 20rem);
   right: 0;
-  background: #009999;
-  overflow-y: scroll; }
+  background: #009999; }
 
 section {
   position: relative;
@@ -199,17 +198,18 @@ section:nth-child(odd) {
 #projects {
   position: relative;
   overflow-x: hidden;
-  margin: auto auto auto auto;
-  height: calc(100vh - 15rem);
-  width: calc(100vw - 30rem); }
+  padding-left: 1rem;
+  height: calc(100vh - 20rem);
+  width: calc(100vw - 35rem);
+  margin: 0 auto 0 auto; }
 
 .single-project {
   position: absolute;
-  padding: 2rem;
+  padding: auto auto auto auto;
   background-color: whitesmoke;
-  box-shadow: 0 0.4rem 0.8rem -0.6rem black;
   width: calc(100% - 4rem);
-  height: calc(100% - 4rem); }
+  height: calc(100% - 4rem);
+  padding: 1rem; }
 
 #card1 {
   left: 0; }
@@ -320,7 +320,7 @@ section:nth-child(odd) {
     left: -17rem;
     transition: 0.3s; }
   #burger {
-    left: 0.5rem;
+    left: 0.30rem;
     visibility: visible;
     opacity: 1; }
   #main {
