@@ -4,8 +4,6 @@ function openSide() {
     var sideElem = document.getElementById("side");
     var mainElem = document.getElementById("main");
 
-    console.log("click dammit !")
-
     if (sideElem.style.left === "-17rem") {
         sideElem.style.left = "0";
         burgerElem.style.left = "17.5rem";
@@ -13,7 +11,7 @@ function openSide() {
 
     } else {
         sideElem.style.left = "-17rem";
-        burgerElem.style.left = "0.5rem";
+        burgerElem.style.left = "0.3rem";
         mainElem.style.width = "95%";
     }
 };
