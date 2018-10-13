@@ -7,9 +7,11 @@ function openSide() {
     if (sideIsOpen) {
         sideElem.style.left = "-17rem";
         burgerElem.style.left = "0.3rem";
+        sideIsOpen = true;
     } else {
         sideElem.style.left = "0";
         burgerElem.style.left = "17.5rem";
+        sideIsOpen = false;
     }
 };
 
