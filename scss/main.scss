@@ -186,7 +186,13 @@ section:nth-child(odd) {
     padding-top: 4rem;
 }
 
-
+.main-card {
+    padding: 2rem;
+    background-color: whitesmoke;
+    box-shadow: 0 0.4rem 0.8rem -0.6rem black;
+    position: relative;
+    margin: 1.5rem;
+}
 
 /* ----------------------------------------------------
                         arrows
@@ -249,7 +255,7 @@ section:nth-child(odd) {
     overflow-x: hidden;
     padding-left: 1rem;
     height: calc(100vh - 20rem);
-    width: calc(100vw - 35rem);
+    width: calc(100vw - 35%);
     margin: 0 auto 0 auto;
 }
 
@@ -274,14 +280,7 @@ section:nth-child(odd) {
     left: 200vw;
 }
 
-.main-card {
-    padding: 2rem;
-    background-color: whitesmoke;
-    box-shadow: 0 0.4rem 0.8rem -0.6rem black;
-    position: relative;
-    margin: 2rem;
 
-}
 
 .card-title {}
 
