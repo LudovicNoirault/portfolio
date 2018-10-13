@@ -38,7 +38,6 @@ function slide(arrow) {
     console.log('Current counter', counter);
 
     project = listProjects[counter];
-    project.style.zIndex = 0;
 
     /*handle visibility of the arrows*/
     if (counter != 0) {
@@ -54,9 +53,9 @@ function slide(arrow) {
     };
 
     for (var i = 0; i < listProjects.length; i++) {
-        listProjects[i].style.zIndex = 0;
+        listProjects[i].style.visibility = "hidden";
     }
 
     project.style.left = 0;
-    project.style.zIndex = 1;
+    project.style.visibility = "visible";
 }
