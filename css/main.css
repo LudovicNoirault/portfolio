@@ -212,12 +212,10 @@ section:nth-child(odd) {
 
 .single-project {
   position: absolute;
-  padding: auto auto auto auto;
   background-color: whitesmoke;
-  width: calc(100% - 4rem);
-  height: calc(100% - 4rem);
   padding: 1rem;
-  visibility: visible; }
+  visibility: visible;
+  top: 0.5rem; }
 
 #card1 {
   left: 0; }
@@ -326,3 +324,21 @@ section:nth-child(odd) {
     max-width: calc(100vw - 4rem); }
   #projects {
     width: calc(100vw - 15rem); } }
+
+@media screen and (max-width: 750px) {
+  .main-card {
+    overflow: scroll;
+    max-height: calc(100vh - 17rem);
+    margin: 0 1.5rem 0 1.5rem; }
+  #projects {
+    width: calc(100vw - 12rem); }
+  .card-title,
+  .card-text {
+    margin: 0;
+    padding: 0; }
+  .card-text {
+    margin-bottom: 1.5rem; }
+  .left {
+    left: 1rem; }
+  .right {
+    right: 1rem; } }
