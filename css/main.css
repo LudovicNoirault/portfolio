@@ -312,8 +312,9 @@ section:nth-child(odd) {
 /* ----------------------------------------------------
                         Media queries
  ---------------------------------------------------- */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
   #side {
+    z-index: 2;
     left: -17rem;
     transition: 0.3s; }
   #burger {
@@ -321,15 +322,17 @@ section:nth-child(odd) {
     visibility: visible;
     opacity: 1; }
   #main {
-    max-width: calc(100vw - 4rem); }
+    max-width: calc(100vw - 3rem); }
   #projects {
     width: calc(100vw - 15rem); } }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 600px) {
   .main-card {
     overflow: scroll;
     max-height: calc(100vh - 17rem);
     margin: 0 1.5rem 0 1.5rem; }
+  #side {
+    z-index: 2; }
   #projects {
     width: calc(100vw - 12rem); }
   .card-title,

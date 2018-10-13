@@ -1,18 +1,16 @@
 function openSide() {
-
     var burgerElem = document.getElementById("burger");
     var sideElem = document.getElementById("side");
-    var mainElem = document.getElementById("main");
 
-    if (sideElem.style.left === "-17rem") {
+    if (burgerElem.style.left === "0.3rem") {
         sideElem.style.left = "0";
         burgerElem.style.left = "17.5rem";
-        mainElem.style.width = "67%";
+        //mainElem.style.width = "67%";
 
     } else {
         sideElem.style.left = "-17rem";
         burgerElem.style.left = "0.3rem";
-        mainElem.style.width = "95%";
+        //mainElem.style.width = "95%";
     }
 };
 
